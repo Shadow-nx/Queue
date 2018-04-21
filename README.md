@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/Shadow-nx/queue.svg?branch=master)](https://travis-ci.org/Shadow-nx/queue)
 ```Shellsession
 ~/workspace/ $ git clone https://github.com/Shadow-nx/queue.git
 Cloning into 'queue'...
