@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include <fstream>
-#include "queue1.hpp"
+#include "queue.hpp"
 
 using namespace std;
 
