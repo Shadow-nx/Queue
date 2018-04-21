@@ -22,7 +22,7 @@ class Queue {
 		auto swap_(Queue& q) -> void;
 		auto operator=(const Queue& q) -> void;
 		auto empty() -> bool;
-		auto size() -> int;
+		auto size() -> T;
 		auto push(T value) -> void;
 		auto pop() -> void;
 		auto front() -> T&;
@@ -91,8 +91,8 @@ auto Queue<T>::empty() -> bool {
 		return false;
 }
 template <class T>
-auto Queue<T>::size() -> int {
-	int size_=0;
+auto Queue<T>::size() -> T {
+	size_t size_=0;
 	for(Node<T>*curr=list->first; curr!=nullptr; curr=curr->next) {
 		size_++;
 	}
