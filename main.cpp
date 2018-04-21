@@ -1,16 +1,15 @@
-
 #include <iostream>
 #include <fstream>
-#include "queue.hpp"
+#include "queue1.hpp"
 
 using namespace std;
 
 int main(){
 
-Queue q1;
-Queue q2 = {1,2,3,4};
+Queue<int> q1;
+Queue<int> q2 = {1,2,3,4};
 
-Queue q3{q2};
+Queue<int> q3{q2};
 
 cout << q2 << endl;
 cout << q3 << endl;
@@ -28,7 +27,7 @@ cout << q3 << endl;
 ofstream output{ "queue.bin" };
 output << q3;
 
-Queue q4;
+Queue<int> q4;
 ifstream input{ "queue.bin" };
 input >> q4;
 
@@ -44,8 +43,6 @@ q4.pop();
 cout << q4 << endl;
 
 q4.front() = 6;
-
-cout << q4 << endl;
 
 return 0;
 }
